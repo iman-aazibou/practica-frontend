@@ -1,0 +1,26 @@
+.circleSpinner {
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  margin: 0 auto;
+  position: relative;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-top: 10px solid black;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

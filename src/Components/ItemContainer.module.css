@@ -1,0 +1,39 @@
+.img {
+  width: 180px;
+  height: 180px;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.price {
+  padding-bottom: 35px;
+}
+
+/* Responsive */
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 0.9em;
+  }
+  .img {
+    width: 120px;
+    height: 120px;
+  }
+  .price {
+   font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 0.6em;
+  }
+  .img {
+    width: 80px;
+    height: 80px;
+  }
+}

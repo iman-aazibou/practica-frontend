@@ -1,0 +1,49 @@
+.body {
+  height: 100vh;
+  background-color: rgb(247, 246, 246);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  position: sticky;
+}
+
+/* Items */
+
+.container {
+  height: 70%;
+}
+
+.items-wrapper {
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.item {
+  width: calc(33.33% - 10px);
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    width: calc(50% - 5px);
+  }
+}
