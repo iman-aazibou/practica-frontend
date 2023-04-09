@@ -11,3 +11,13 @@ La aplicación ha sido creada con React y se encarga de mostrar los productos de
 
 ### npm install axios
 
+# State managment
+
+### npm install redux react-redux
+
+Para usar configureStore en vez de createStore
+
+### npm install @reduxjs/toolkit 
+
+
+

@@ -2,11 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./Views/App";
+import { configureStore } from "@reduxjs/toolkit";
+import allReducer from "./redux/reducers";
+import { Provider } from "react-redux";
+
+const store = configureStore({
+  reducer: allReducer,
+  devTools: process.env.NODE_ENV !== "production", // Enable Redux DevTools in development mode
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

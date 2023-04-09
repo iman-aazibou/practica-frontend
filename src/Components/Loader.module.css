@@ -1,13 +1,9 @@
 .circleSpinner {
-  position: relative;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.spinner {
   margin: 0 auto;
   position: relative;
+  top: 20px;
+}
+.spinner {
   border: 10px solid rgba(0, 0, 0, 0.1);
   border-top: 10px solid black;
   border-radius: 50%;
